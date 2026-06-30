@@ -2,7 +2,7 @@
   "id": "render-on-demand",
   "title": "Render on Demand",
   "description": "Skip the main-screen render when nothing visual changed — render-on-demand idle optimization for FoundryVTT v13.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "compatibility": {
     "minimum": "13",
     "verified": "14.364"
