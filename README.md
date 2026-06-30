@@ -1,7 +1,9 @@
 # Render on Demand
 
 Skip the main-screen render when nothing visual changed — a render-on-demand idle
-optimization for [FoundryVTT](https://foundryvtt.com/) v13 (verified on v13.348).
+optimization for [FoundryVTT](https://foundryvtt.com/). v13/v14 compatible
+(`minimum: 13`, verified on v14.364; the render mechanism is unchanged across both
+— v14 still bundles PIXI 7.4.3 and the same `autoStart` per-frame draw).
 
 > ⚠️ **Experimental prototype.** The mechanism is proven and measured in a
 > controlled harness (see below), but it has **not yet been exhaustively tested
@@ -45,10 +47,12 @@ continuous GPU/CPU work (fans/battery/heat) while nothing happens.
   pass only (`displayObject === canvas.stage && !options.renderTexture` — never
   off-screen render-texture passes), skip the draw when no render was requested
   recently **and** `continuousActive()` is false.
-- **A HIGH-priority ticker latch** samples `canvas.pendingRenderFlags` (`OBJECTS` +
-  `PERCEPTION` queues) *before* Foundry's own callbacks clear them. Any pending
-  flag → request a render. This catches every change that flows through Foundry's
-  render-flag system.
+- **A HIGH-priority ticker latch** samples `canvas.pendingRenderFlags` *before*
+  Foundry's own callbacks clear them. Any pending flag → request a render. This
+  catches every change that flows through Foundry's render-flag system. v13 has
+  two queues (`OBJECTS` + `PERCEPTION`); v14 adds a third, `INTERFACE`. The latch
+  sums all three, so the new v14 queue is accounted for — and because `INTERFACE`
+  is simply absent on v13, the same code path serves both versions.
 - **Pointer/wheel listeners** on the canvas element + a broad set of `refresh*` /
   `draw*` / camera hooks request renders for interaction and discrete refreshes.
 - **`settleFrames`** (default 3) renders a few extra frames after each dirty signal

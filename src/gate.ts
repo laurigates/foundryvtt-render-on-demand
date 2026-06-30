@@ -140,12 +140,17 @@ export function installGate(): void {
   gated.__rod_original = original;
   renderer.render = gated;
 
-  // HIGH-priority latch: sample pending render flags before OBJECTS (HIGH-2) /
-  // PERCEPTION (NORMAL+2) callbacks clear them. Any pending flag => render.
+  // HIGH-priority latch: sample pending render flags before Foundry's own
+  // callbacks clear them. Any pending flag => render. v14 (board.mjs
+  // `#activateTicker`) splits the queue into three — OBJECTS (HIGH-2),
+  // INTERFACE (HIGH-3), PERCEPTION (NORMAL+2); v13 has only OBJECTS +
+  // PERCEPTION. The HIGH latch still runs before all of them. `pf.INTERFACE`
+  // is `undefined` on v13, so its term contributes 0 — one path serves both.
   const latch = () => {
     const pf = canvas?.pendingRenderFlags;
     if (!pf) return;
-    const pending = (pf.OBJECTS?.size || 0) + (pf.PERCEPTION?.size || 0);
+    const pending =
+      (pf.OBJECTS?.size || 0) + (pf.INTERFACE?.size || 0) + (pf.PERCEPTION?.size || 0);
     if (pending > 0) rod.requestRender();
   };
   canvas.app.ticker.add(latch, undefined, PIXI.UPDATE_PRIORITY.HIGH);
