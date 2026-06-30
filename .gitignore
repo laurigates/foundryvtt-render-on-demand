@@ -15,3 +15,6 @@ Thumbs.db
 # Local notes / scratch
 TODO.local.md
 NOTES.local.md
+
+# Claude Code local (machine-specific) settings
+.claude/settings.local.json
