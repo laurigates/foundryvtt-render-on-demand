@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.1...foundryvtt-render-on-demand-v0.1.2) (2026-06-30)
+
+
+### Miscellaneous
+
+* add Claude Code CI workflows and project config ([#4](https://github.com/laurigates/foundryvtt-render-on-demand/issues/4)) ([b300e15](https://github.com/laurigates/foundryvtt-render-on-demand/commit/b300e15d8caac005125cd7f89eee0d67cd24e751))
+
 ## [0.1.1](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.0...foundryvtt-render-on-demand-v0.1.1) (2026-06-30)
 
 
