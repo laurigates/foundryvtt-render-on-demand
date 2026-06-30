@@ -2,7 +2,7 @@
   "id": "render-on-demand",
   "title": "Render on Demand",
   "description": "Skip the main-screen render when nothing visual changed — render-on-demand idle optimization for FoundryVTT v13.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14.364"
@@ -12,8 +12,12 @@
       "name": "Lauri Gates"
     }
   ],
-  "esmodules": ["render-on-demand.mjs"],
-  "styles": ["styles/render-on-demand.css"],
+  "esmodules": [
+    "render-on-demand.mjs"
+  ],
+  "styles": [
+    "styles/render-on-demand.css"
+  ],
   "languages": [
     {
       "lang": "en",
@@ -29,8 +33,16 @@
   "bugs": "https://github.com/laurigates/foundryvtt-render-on-demand/issues",
   "flags": {
     "hotReload": {
-      "extensions": ["css", "hbs", "json"],
-      "paths": ["styles", "templates", "lang"]
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "templates",
+        "lang"
+      ]
     }
   }
 }
