@@ -1,0 +1,8 @@
+{
+  "render-on-demand.Settings.Enabled.Name": "Enable Render on Demand",
+  "render-on-demand.Settings.Enabled.Hint": "Skip the main-screen render when nothing visual changed. Disable to always render every frame.",
+  "render-on-demand.Settings.SettleFrames.Name": "Settle frames",
+  "render-on-demand.Settings.SettleFrames.Hint": "Render this many extra frames after each change, as a conservative correctness margin. Default 3.",
+  "render-on-demand.Settings.Debug.Name": "Debug logging",
+  "render-on-demand.Settings.Debug.Hint": "Log gate install and skip/render activity to the console."
+}

@@ -1,0 +1,20 @@
+/* All selectors are scoped under the module id to avoid clobbering core or
+ * other modules' styles. Keep this prefix on every rule you add. */
+.render-on-demand-app-body {
+  padding: 0.75rem;
+}
+
+.render-on-demand-app-body h2 {
+  margin-top: 0;
+}
+
+.render-on-demand-gm-note {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.render-on-demand-app-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
