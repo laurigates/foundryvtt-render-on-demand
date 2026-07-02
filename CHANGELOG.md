@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.2...foundryvtt-render-on-demand-v0.1.3) (2026-06-30)
+
+
+### Bug Fixes
+
+* exclude module.json from biome checks ([#6](https://github.com/laurigates/foundryvtt-render-on-demand/issues/6)) ([0975126](https://github.com/laurigates/foundryvtt-render-on-demand/commit/0975126bc609b518b24be1f8972d404f7a9f0dc1))
+
 ## [0.1.2](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.1...foundryvtt-render-on-demand-v0.1.2) (2026-06-30)
 
 
