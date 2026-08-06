@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.3...foundryvtt-render-on-demand-v0.1.4) (2026-07-28)
+
+
+### Miscellaneous
+
+* **claude:** allow scheduling and notification tools without prompting ([#9](https://github.com/laurigates/foundryvtt-render-on-demand/issues/9)) ([8d0d296](https://github.com/laurigates/foundryvtt-render-on-demand/commit/8d0d296a255daaadc961e83f769ac17144e01e46))
+
 ## [0.1.3](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.2...foundryvtt-render-on-demand-v0.1.3) (2026-06-30)
 
 
