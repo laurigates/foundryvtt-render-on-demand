@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.4...foundryvtt-render-on-demand-v0.1.5) (2026-09-26)
+
+
+### Miscellaneous
+
+* **deps:** update dependency @biomejs/biome to v2.5.14 ([#11](https://github.com/laurigates/foundryvtt-render-on-demand/issues/11)) ([fe53e5f](https://github.com/laurigates/foundryvtt-render-on-demand/commit/fe53e5f1e3f27fbf7495490aa7c43c10ea5896e0))
+
 ## [0.1.4](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.3...foundryvtt-render-on-demand-v0.1.4) (2026-07-28)
 
 
