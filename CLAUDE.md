@@ -4,15 +4,15 @@ A FoundryVTT v13 module (settings + lifecycle hooks), built with Vite + TypeScri
 
 ## Layout
 
-| Path | Role |
-|------|------|
-| `module.json` | The manifest. `id` = `render-on-demand` and MUST match the install folder + zip name. release-please bumps `$.version` in lockstep with `package.json`. |
-| `src/module.ts` | ESM entry (`esmodules`). Registers hooks; built to `dist/render-on-demand.mjs` by Vite. |
-| `src/settings.ts` | `game.settings` registration (called from `init`). |
-| `src/constants.ts` | `MODULE_ID` / `MODULE_TITLE` — the single source for the id. |
-| `src/foundry-shims.d.ts` | Loose ambient types for the Foundry globals. Keep `tsc` green; verify the real API before trusting a shape. |
-| `lang/en.json` | Localization. Keys are namespaced under `render-on-demand.`. |
-| `styles/render-on-demand.css` | Styles, every selector scoped under `.render-on-demand*`. |
+| Path                          | Role                                                                                                                                                    |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `module.json`                 | The manifest. `id` = `render-on-demand` and MUST match the install folder + zip name. release-please bumps `$.version` in lockstep with `package.json`. |
+| `src/module.ts`               | ESM entry (`esmodules`). Registers hooks; built to `dist/render-on-demand.mjs` by Vite.                                                                 |
+| `src/settings.ts`             | `game.settings` registration (called from `init`).                                                                                                      |
+| `src/constants.ts`            | `MODULE_ID` / `MODULE_TITLE` — the single source for the id.                                                                                            |
+| `src/foundry-shims.d.ts`      | Loose ambient types for the Foundry globals. Keep `tsc` green; verify the real API before trusting a shape.                                             |
+| `lang/en.json`                | Localization. Keys are namespaced under `render-on-demand.`.                                                                                            |
+| `styles/render-on-demand.css` | Styles, every selector scoped under `.render-on-demand*`.                                                                                               |
 
 ## Rules of the road
 
