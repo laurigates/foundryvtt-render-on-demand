@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.6](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.5...foundryvtt-render-on-demand-v0.1.6) (2026-11-27)
+
+
+### Miscellaneous
+
+* **claude:** reconcile Claude Code config with the repo baseline ([#18](https://github.com/laurigates/foundryvtt-render-on-demand/issues/18)) ([5aa0a02](https://github.com/laurigates/foundryvtt-render-on-demand/commit/5aa0a028a0c17cc8f9f4bb8c8eb5f5624264cd7c))
+* **deps:** pin dependencies ([#13](https://github.com/laurigates/foundryvtt-render-on-demand/issues/13)) ([db71dc3](https://github.com/laurigates/foundryvtt-render-on-demand/commit/db71dc39bcda4d5595449883c01e8e01b8524cb3))
+* **deps:** pin dependency vitest to 3.2.7 [security] ([#15](https://github.com/laurigates/foundryvtt-render-on-demand/issues/15)) ([9f502e9](https://github.com/laurigates/foundryvtt-render-on-demand/commit/9f502e95cc736c28a81faa6a16a66eddf9a7c923))
+* **deps:** update dependency @biomejs/biome to v2.6.8 ([#19](https://github.com/laurigates/foundryvtt-render-on-demand/issues/19)) ([4eabe70](https://github.com/laurigates/foundryvtt-render-on-demand/commit/4eabe7005a3f5a011a7de59a42b37d713a6b55e6))
+
 ## [0.1.5](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.4...foundryvtt-render-on-demand-v0.1.5) (2026-10-26)
 
 
