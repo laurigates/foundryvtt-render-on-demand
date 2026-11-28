@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.6...foundryvtt-render-on-demand-v0.1.7) (2026-11-28)
+
+
+### Documentation
+
+* make AGENTS.md the canonical agent instructions file ([#22](https://github.com/laurigates/foundryvtt-render-on-demand/issues/22)) ([2a8e29a](https://github.com/laurigates/foundryvtt-render-on-demand/commit/2a8e29a161a577983ac55f758b37fc6dfa590cfa))
+
 ## [0.1.6](https://github.com/laurigates/foundryvtt-render-on-demand/compare/foundryvtt-render-on-demand-v0.1.5...foundryvtt-render-on-demand-v0.1.6) (2026-11-27)
 
 
